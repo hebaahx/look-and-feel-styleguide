@@ -8,8 +8,15 @@
        gedeeld gaan worden door jullie projecten */
 
     /* Kleuren */
-    .color-example {
-        background-color: #bada55;
+    :root {
+        --primary-color: #172F3B;
+        --primary-action: #00E53D;
+        --secondary-action: #00FF44;
+        --background-color: #FFFFFF;
+        --background-secondary: #E9ECEE;
+
+        --font-weight-heavy:900;
+
     }
 
     /* Typografie */
