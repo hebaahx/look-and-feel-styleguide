@@ -12,10 +12,17 @@
         --primary-color: #172F3B;
         --primary-action: #00E53D;
         --secondary-action: #00FF44;
-        --background-color: #FFFFFF;
-        --background-secondary: #E9ECEE;
+        --white: #FFFFFF;
+        --grey-background: #E9ECEE;
 
-        --font-weight-heavy:900;
+        /* TEXT */
+        --primary-text-color: #FFFFFF;
+        --secondary-text-color: #90A1AA;
+
+        /* FONT-SIZE */
+        --first-line: 2em;
+        --second-line: 1.6em;
+        --description: 1.8em;
 
     }
 
