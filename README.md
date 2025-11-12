@@ -8,6 +8,8 @@ Onze samengemaakte styleguide voor SnappThis [Figma Interface inventory](https:/
 
 Onze Teamcanvas met onze afspraken en regels voor onze team [TeamCanvas](https://www.figma.com/design/m6gDxMDBp69qJU5f0vGRHF/Teamcanvas?node-id=0-1&p=f&t=duUnaJGGJgy3DduO-0)
 
+Figma bestand met de verschillende designs voor SnappThis https://www.figma.com/design/lphsL70W8JfHtddUdaon3k/2025snappthisDesign?node-id=0-1&t=v8e6tp615r2Du55c-1
+
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
