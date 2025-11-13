@@ -51,16 +51,25 @@
         --primary-text-color: #FFFFFF;
         --secondary-text-color: #90A1AA;
 
+        /* TYPOGRAPHY */
+        --font-family: 'Bariol', sans-serif;
+
         /* FONT-SIZE */
         --first-line: 2em;
         --second-line: 1.6em;
         --description: 1.8em;
 
+        --letter-spacing: 1px;
+        --line-height-list: 1.6;
+        --line-height-text: 1.3;
+
+        /* BORDER */
+        --border-none: none;
+        --border-radius-button: 50px;
+        --border-radius-photo: 7px;
+
+        /* BUTTON SIZE MOET NOG BESPROKEN WORDEN*/
+        --padding-button: ;
+        --button-size: ;
     }
-
-    /* Typografie */
-
-
-    /* Formulier elementen */
-
 }
