@@ -2,42 +2,10 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
-/* BARIOL REGULAR */
-@font-face {
-    font-family: 'Bariol';
-    src: url('./fonts/Bariol_Regular.otf');
-    font-weight: 400;
-}
-
-/* BARIOL REGULAR ITALIC */
-@font-face {
-    font-family: 'Bariol';
-    src: url('./fonts/Bariol_Regular_Italic.otf');
-    font-style: italic;
-}
-
-/* BARIOL BOLD */
-@font-face {
-    font-family: 'Bariol';
-    src: url('./fonts/Bariol_Bold.otf');
-    font-weight: 700;
-}
-
-/* BARIOL LIGHT */
-@font-face {
-    font-family: 'Bariol';
-    src: url('./fonts/Bariol_Light.otf');
-    font-weight: 300;
-}
-
-/* BARIOL THIN */
-@font-face {
-    font-family: 'Bariol';
-    src: url('./fonts/Bariol_Thin.otf');
-    font-weight: 200;
-}
-
 @layer styleguide {
+
+    /* Schrijf hier de verschillende stijlen, die
+       gedeeld gaan worden door jullie projecten */
 
     /* Kleuren */
     :root {
