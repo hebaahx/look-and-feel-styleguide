@@ -46,6 +46,15 @@
         --secondary-action: #00FF44;
         --white: #FFFFFF;
         --grey-background: #E9ECEE;
+
+        /* knop kleuren */
+        --like-button: #00FF44;
+        --tomato-button: #FF2A34;
+        --star-button: #F8E71C;
+        /* deze knop is voor Add people, add snaps, edit, remove etc, eigenlijk de grijze basis kleur van veel knoppen, even goed naam bedenken nog */
+        --add-action: #4E6977;
+
+
  
         /* TEXT */
         --primary-text-color: #FFFFFF;
