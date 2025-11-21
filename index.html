@@ -50,6 +50,11 @@
         <figcaption>#E9ECEE</figcaption>
       </figure>
 
+      <figure>
+        <code class="grey-text-color"></code>
+        <figcaption>#90A1AA</figcaption>
+      </figure>
+
     </section> <!-- einde Kleuren -->
 
 
@@ -157,18 +162,18 @@
         <fieldset>
           <legend class="">Radio options:</legend>
 
-          <label class="">
-            <input type="radio" name="radio-options" value="option 1" checked class="">
+          <label class="radio-options">
+            <input type="radio" name="radio-options" value="option 1" checked class="radio-option">
             Option 1
           </label>
 
           <label class="">
-            <input type="radio" name="radio-options" value="option 2" class="">
+            <input type="radio" name="radio-options" value="option 2" class="radio-option">
             Option 2
           </label>
 
           <label class="">
-            <input type="radio" name="radio-options" value="option 3" class="">
+            <input type="radio" name="radio-options" value="option 3" class="radio-option">
             Option 3
           </label>
         </fieldset>
@@ -176,29 +181,46 @@
         <fieldset>
           <legend class="">Checkbox</legend>
 
-          <label class="">
-            <input type="checkbox" name="checkbox-1" checked class="">
+          <label class="checkbox-1">
+            <input type="checkbox" name="checkbox-1" checked class="checkbox">
             Checkbox 1
           </label>
 
-          <label class="">
-            <input type="checkbox" name="checkbox-2" class="">
+          <label class="checkbox-2">
+            <input type="checkbox" name="checkbox-2" class="checkbox">
             Checkbox 2
           </label>
 
-          <label class="">
-            <input type="checkbox" name="checkbox-3" class="">
+          <label class="checkbox-3">
+            <input type="checkbox" name="checkbox-3" class="checkbox">
             Checkbox 3
           </label>
         </fieldset>
 
-        <p>
-          <label class="">
-            Search: 
-            <input type="search" class="">
-          </label>
-        </p>
-        
+        <fieldset>
+          <legend>Sliders voor notificaties van likes, dislikes & favorites</legend>
+            <label for="slider-1">
+              <input type="checkbox" name="checkbox-1" checked class="checkbox-slider">
+            </label>
+
+            <label for="slider-2">
+              <input type="checkbox" name="checkbox-2" class="checkbox-slider">
+            </label>
+
+            <label for="slider-3">
+              <input type="checkbox" name="checkbox-3" class="checkbox-slider">
+            </label>
+        </fieldset>
+
+        <fieldset class="thesearchbar">
+          <legend>Searchbar:</legend>
+          <p>
+            <label class="search">
+              <input type="search" class="searchbar" placeholder="Find snapps...">
+            </label>
+          </p>
+        </fieldset>
+
         <p>
           <label class="">
             Tel: 
@@ -213,13 +235,32 @@
           </label>
         </p>
 
+        <fieldset class="buttons">
+          <legend>Buttons:</legend>
         <p>
-          <input type="submit" value="Submit button" class="">
+          <input type="submit" value="Submit" class="submit-button">
         </p>
 
         <p>
-          <button type="button" class="">Button</button>
+          <button type="button" class="basic-button">Done!</button>
         </p>
+
+        <p>
+          <button type="button" class="basic-button">Invite!</button>
+        </p>
+
+        <p>
+          <button type="button" class="basic-button">Create!</button>
+        </p>
+
+        <p>
+          <button type="button" class="only-text-button">Cancel</button>
+        </p>
+
+        <p>
+          <button type="button" class="ok-button">OK</button>
+        </p>
+        </fieldset>
 
         <p>
           <label for="image_uploads">Capture</label>
@@ -237,5 +278,6 @@
 
     <!-- En eventueel meer categorieën en componenten -->
 
+    
   </body>
 </html>

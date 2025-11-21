@@ -46,6 +46,7 @@
         --secondary-action: #00FF44;
         --white: #FFFFFF;
         --grey-background: #E9ECEE;
+        --grey-text-color: #90A1AA;
 
         /* knop kleuren */
         --like-button: #00FF44;
@@ -53,8 +54,6 @@
         --star-button: #F8E71C;
         /* deze knop is voor Add people, add snaps, edit, remove etc, eigenlijk de grijze basis kleur van veel knoppen, even goed naam bedenken nog */
         --add-action: #4E6977;
-
-
  
         /* TEXT */
         --primary-text-color: #FFFFFF;
@@ -76,56 +75,160 @@
         --border-none: none;
         --border-radius-button: 50px;
         --border-radius-photo: 7px;
+        --border-radius-round: 100%;
+        --border-radius-searchbar: 2px;
  
         /* BUTTON SIZE MOET NOG BESPROKEN WORDEN*/
-        --padding-button: ;
-        --button-size: ;
+        --padding-button: .8em;
+    }
+    * {
+    font-family: var(--font-family);
     }
 
-    * {
-        font-family: var(--font-family);
-      }
+    .primary-color {
+    background-color: var(--primary-color);
+    }
  
-  .primary-color {
-  background-color: var(--primary-color);
-  }
+    .primary-action {
+    background-color: var(--primary-action);
+    }
  
-  .primary-action {
-  background-color: var(--primary-action);
-  }
- 
-  .secondary-action {
-  background-color: var(--secondary-action);
-  }
- 
-  .white {
-  background-color: var(--white);
-  border: 1px solid #000000; /* zodat je de witte kleur nog kunt zien */
-  }
- 
- .grey-background {
-  background-color: var(--grey-background);
-  }
+    .secondary-action {
+    background-color: var(--secondary-action);
+    }
 
-/* 4. Hover / Focus / Active voorbeelden */
-button {
-  background-color: var(--primary-action);
-  border-radius: var(--primary-radius-button);
-  cursor: pointer;
-  /* padding samen bepalen? */
-}
-
-button:hover {
-  background-color: var(--secondary-action);
-}
-
-button:focus {
-/*  samen bepalen, belangrijk voor keyboard gebruikers*/
-}
-
-button:active{
-/* animatie kiezen? */
-}
+    .white {
+    background-color: var(--white);
+    border: 1px solid #000000; /* zodat je de witte kleur nog kunt zien */
+    }
  
+    .grey-background {
+    background-color: var(--grey-background);
+    }
+
+    input[type="sucmit"]{
+
+    }
+
+    /* Done / Invite / Create buttons */
+    button {
+    background-color: var(--primary-action);
+    border-radius: var(--border-radius-button);
+    cursor: pointer;
+    padding: var(--padding-button);
+    width: 8vw;
+    border: var(--border-none);
+    color: var(--white);
+    font-weight: 700;
+
+        &:hover {
+        background-color: var(--secondary-action);
+        }
+
+        &:focus-visible {
+        outline: 2px solid var(--primary-color);
+        }
+
+        /* &:active
+        /* animatie kiezen? */
+    }
+
+    /* Button zonder achtergrondkleur CANCEL, REMOVE & EDIT */
+    .only-text-button {
+        background: none;
+        border: var(--border-none);
+        color: var(--grey-text-color);
+        padding: .5em;
+        cursor: pointer;
+        font-size: inherit;
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--tomato-button);
+            background: none;
+        }
+
+        &:focus-visible {
+            outline: 1px solid var(--primary-color);
+        } 
+    }
+
+    .ok-button {
+        cursor: pointer;
+        border-radius: var(--border-radius-round);
+        padding: 1em;
+        width: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--primary-action);
+    margin: .5em;
+
+    &:focus-visible {
+        outline: 1px solid var(--primary-action);
+    } 
 }
- 
+
+/* Slider voor het aan- en uitzetten van notificaties */
+.checkbox-slider {
+    appearance: none;
+    width: 4em;
+    aspect-ratio: 2/1;
+    margin: .5em;
+    background-color: var(--white);
+    border-radius: var(--border-radius-button);
+    box-shadow: 0 0 3px ;
+    font: inherit;
+    cursor: pointer;
+    padding: .1em;
+
+
+    /* de :after is het balletje van de switch */
+    &::after {
+        content: "";
+        display: block;
+        width: 1.8em;
+        aspect-ratio: 1;
+        background-color: var(--white);
+        border-radius: inherit;
+        box-shadow: 0 0 3px ;
+
+        transition: .2s;
+    }
+
+    &:checked {
+        background-color: var(--primary-action);
+    }
+
+    &:checked::after {
+        background-color: var(--white);
+        translate: 2em;
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--secondary-action);
+    }
+}
+
+.searchbar {
+    border-radius: var(--border-radius-searchbar);
+    border: var(--border-none);
+    padding: .5em;
+}
+}
+
+.thesearchbar {
+    background-color: var(--grey-background);
+    place-items: center;
+    text-decoration: none;
+
+}
+
+.buttons {
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
