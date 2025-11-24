@@ -180,6 +180,7 @@ input[type="checkbox"] {
     aspect-ratio: 2/1;
     margin: .5em;
     background-color: var(--white);
+    border-radius: var(--border-radius-button);
     box-shadow: 0 0 3px ;
     font: inherit;
     cursor: pointer;
