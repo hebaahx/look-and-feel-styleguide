@@ -107,10 +107,6 @@
     background-color: var(--grey-background);
     }
 
-    input[type="sucmit"]{
-
-    }
-
     /* Done / Invite / Create buttons */
     button {
     background-color: var(--primary-action);
@@ -242,6 +238,7 @@ input[type="checkbox"] {
     left: 0;
     right: 0; */
     z-index: 10;
+    height: 4em;
 
     ul {
         display: grid;
