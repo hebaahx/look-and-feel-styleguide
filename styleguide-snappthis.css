@@ -133,7 +133,7 @@
     /* Button zonder achtergrondkleur CANCEL, REMOVE & EDIT */
     .only-text-button {
         background: none;
-        border: var(--border-none);
+        border: none;
         color: var(--grey-text-color);
         padding: .5em;
         cursor: pointer;
